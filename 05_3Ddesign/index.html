@@ -69,6 +69,155 @@ Here is my scan image and the shape I was scanning.
 
 <img src="./sewing.JPG" style="width: 40%" alt="design png"> <br>
 
+<br>
+<h4>Assignment: Final Project Planning </h4>
+
+My finalized idea is to have a sloth with buttons made with 
+magnets and capacitors on the top. There will be 3 rows of buttons.
+The first row is the open/close which opens and closes the front face of 
+the box, which is where your phone will go. This is attached to a servo in
+a circuit inside of a sloth. Then, the second row is a timer which dictates 
+how long the sloth goes away for. Finally, the other row is start or stop.
+When start is on, you cannot take your phone out, it will just beep
+angrily instead. However, if you turn it off, the sloth will make a sad
+noise and then allow your phone to be taken out. When the timer is up, the
+sloth moves back and makes a happy noise. 
+<br>
+I will hide the circuit board, battery, and 2 motors/wirings on the 
+floor of the sloth. Then, I will have another layer of wood on top of this
+to hide all of the wiring. However, the servo will still be on top so that
+it can move the hinge on the top of the sloth.
+<br>
+The gear system on the inside will be the wheel, with a gear that attaches to 
+another gear that attaches to a motoro on each side. All these gears will be
+on axels which will be made with dowels.
+<br>
+
+I began by drawing a sketch of all of the different parts/vision for my project.
+
+<div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+  <img src="./handwritten2.jpg" style="width: 48%" alt="box">
+  <img src="./handwritten1.jpg" style="width: 48%" alt="box">
+</div>
+
+First, here is the CAD for my final project.
+<img src="./full_cad.png" style="width: 80%" alt="design png"> <br>
+
+Here is just the CAD for the body.
+<img src="./just-box.png" style="width: 80%" alt="design png"> <br>
+
+Once I have solidified the parameters I am going to use for the body,
+I will do the sloth parts of it, which are in another CAD file until
+I am sure about dimensions.
+
+<img src="./sloth.png" style="width: 80%" alt="design png"> <br>
+
+Here are the steps of CAD that I will do as I build out the project more carefully
+<ul>
+  <li>Gear systems</li>
+  <li>The finalized sloth face/back</li>
+  <li>The finalized side of the sloth arms</li>
+  <li>Cad for sloth pieces that go on top</li>
+  <li>Add holes in the bottom top face (both inside and outside) for the extra magnets</li>
+  <li>Add extra top face to stabilize the read top face with the holes</li>
+  <li>Add mechanisms to the sides to stabilize the face that will cover the breadboard (later)</li>
+</ul>
+
+Bill of materials
+
+<ul>
+  <li>6mm plywood (or 4 if there isn’t 6) for laser cutting (will start in cardboard for MVP) (Body, gears, face, arms on the side)</li>
+  <li>4 omni wheels</li>
+  <li>4 dowels to mount the gears</li>
+  <li>1 servo</li>
+  <li>2 regular yellow motors</li>
+  <li>2 motor drivers</li>
+  <li>A breadboard (and the right pins/wires to connect the components)</li>
+  <li>A microcontroller</li>
+  <li>The capacitor material to add to the top buttons</li>
+  <li>2 magnets x 7 holes + 2 magnets x 3 little sloths (20 total little magnets)</li>
+  <li>3 x 3d printed little sloths (so a 3d printer + plastic)</li>
+  <li>Wood glue + hot glue</li>
+  <li>1 hinge + later materials to motorize my hinges (3d printed or laser cut)</li>
+</ul>
+
+
+Timeline
+
+<div style="border-left: 3px solid #8B7355; padding-left: 20px; margin: 10px 0;">
+
+  <div style="margin-bottom: 24px; position: relative;">
+    <div style="position: absolute; left: -27px; top: 4px; width: 12px; height: 12px; background: #8B7355; border-radius: 50%;"></div>
+    <strong>Week of March 9th</strong>
+    <ul><li>Practice using wheels in my capacitive sensor design to measure distance (see if I can find omni wheels)</li></ul>
+  </div>
+
+  <div style="margin-bottom: 24px; position: relative;">
+    <div style="position: absolute; left: -27px; top: 4px; width: 12px; height: 12px; background: #8B7355; border-radius: 50%;"></div>
+    <strong>Week of March 23rd</strong>
+    <ul>
+      <li>Laser cut the shape of box (but not the hidden middle face)</li>
+      <li>Set up the pieces that go on top with capacitors (magnets also if extra time)</li>
+      <li>Add the wheels with the motor (but not the servo, just add the hinge to the front)</li>
+      <li>Program the following:
+        <ul>
+          <li>Get the motors to drive the sloth backwards (if time, maybe figure out how to get it to turn)</li>
+          <li>Create a program that registers the capacitor on the stop/start buttons to move the sloth backwards with a hardcoded return time (for demo purposes, it will be like 10 seconds)</li>
+          <li>Do all the wiring with just the stop/start capacitors and set up the breadboard, the battery and the two things that attach to the motors inside of the sloth</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div style="margin-bottom: 24px; position: relative;">
+    <div style="position: absolute; left: -27px; top: 4px; width: 12px; height: 12px; background: #8B7355; border-radius: 50%;"></div>
+    <strong>Week of March 30th</strong>
+    <ul>
+      <li>Get the hinges on the front to work with the servo (and thus the open/close capacitors)</li>
+      <li>Wiring</li>
+      <li>Coding</li>
+    </ul>
+  </div>
+
+  <div style="margin-bottom: 24px; position: relative;">
+    <div style="position: absolute; left: -27px; top: 4px; width: 12px; height: 12px; background: #8B7355; border-radius: 50%;"></div>
+    <strong>Week of April 6th</strong>
+    <ul>
+      <li>Get the timing capacitor functionality to work</li>
+      <li>Wiring</li>
+      <li>Coding</li>
+      <li>Get the wheels to turn at a distance past the computer</li>
+    </ul>
+  </div>
+
+  <div style="margin-bottom: 24px; position: relative;">
+    <div style="position: absolute; left: -27px; top: 4px; width: 12px; height: 12px; background: #8B7355; border-radius: 50%;"></div>
+    <strong>Week of April 13th</strong>
+    <ul><li>Get the rest of the actual sloth done &ndash; laser cut the layers of the face and the arms</li></ul>
+  </div>
+
+  <div style="margin-bottom: 24px; position: relative;">
+    <div style="position: absolute; left: -27px; top: 4px; width: 12px; height: 12px; background: #8B7355; border-radius: 50%;"></div>
+    <strong>Week of April 20th</strong>
+    <ul>
+      <li>Figure out the beeping when trying to open on start if the timer isn’t up</li>
+      <li>Figure out the sad sound when turning off (because it means you don’t study)</li>
+      <li>Figure out the “time is up” happy sound that the sloth will make</li>
+    </ul>
+  </div>
+
+  <div style="margin-bottom: 24px; position: relative;">
+    <div style="position: absolute; left: -27px; top: 4px; width: 12px; height: 12px; background: #8B7355; border-radius: 50%;"></div>
+    <strong>Week of April 27th</strong>
+    <ul><li>Install the middle thing that hides the bottom circuits permanently</li></ul>
+  </div>
+
+</div>
+
+
+
+
+
 
 </div>
 </xmp>
