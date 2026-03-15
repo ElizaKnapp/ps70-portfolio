@@ -26,9 +26,38 @@
 
 <h3>Week 6: Electronic Inputs</h3>
 
-<h4>Assignment 1: Capactive Sensor<h4>
+<h4>Assignment 1: Capactive Sensor</h4>
 
-<h4>Assignment 2: [Use + Calibrate Another Sensor]</h4>
+I made a capacitive sensor to model the relationship between voltage and distance.<br>
+Here is it:<br>
+
+<img src="./capacitive_sensor.JPG" style="width: 40%" alt="design png"> <br>
+
+Then, I used the measures that I added to the side to move my plate different amounts of centimeters
+in distance away from the plate, and took measurements using arduino.<br>
+
+<a href='./capacitive_sensor.ino' download > Download my code </a> <br>
+
+Next, I made a graph using the readings from my capacitive sensor to model the 
+relationship between the voltage readings I was getting and the distance away 
+the capacitors were from each other. <br>
+
+Here is the graph: <br>
+<img src="./capacitive_graph.png" style="width: 80%" alt="design png"> <br>
+
+If you take the voltage, subtract 665, and then do 72/that value, you can get
+a measure for distance. This makes sense physically, because the voltage drop
+from the capacitor is inversely proportional to the distance  
+
+<h4>Assignment 2: Photoresistor with an LED output</h4>
+
+I made a photoresistor with an LED that blinks green, but! When you shine your
+phone flashlight on the photoresistor, it blinks the color blue instead.
+
+Here it is: <br>
+
+<img src="./photoresistor_circuit.JPG" style="width: 40%" alt="design png"> <br>
+
 
 </div>
 </xmp>
