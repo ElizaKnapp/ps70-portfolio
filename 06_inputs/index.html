@@ -26,17 +26,19 @@
 
 <h3>Week 6: Electronic Inputs</h3>
 
+<a href='./graphs_week6.ipynb' download > Download my python code to create the graphs from the taken measurements for assignments 1 and 2</a> <br>
+
 <h4>Assignment 1: Capactive Sensor</h4>
 
 I made a capacitive sensor to model the relationship between voltage and distance.<br>
 Here is it:<br>
 
-<img src="./capacitive_sensor.JPG" style="width: 40%" alt="design png"> <br>
+<img src="./capacitive_sensor.JPG" style="width: 80%" alt="design png"> <br>
 
 Then, I used the measures that I added to the side to move my plate different amounts of centimeters
 in distance away from the plate, and took measurements using arduino.<br>
 
-<a href='./capacitive_sensor.ino' download > Download my code </a> <br>
+<a href='./capacitive_sensor.ino' download > Download my arduino code </a> <br>
 
 Next, I made a graph using the readings from my capacitive sensor to model the 
 relationship between the voltage readings I was getting and the distance away 
@@ -46,18 +48,49 @@ Here is the graph: <br>
 <img src="./capacitive_graph.png" style="width: 80%" alt="design png"> <br>
 
 If you take the voltage, subtract 665, and then do 72/that value, you can get
-a measure for distance. This makes sense physically, because the voltage drop
-from the capacitor is inversely proportional to the distance  
+a measure for distance. This makes sense physically, because the capacitance of 
+the plate is inversely proportional to distance.
+
+Here are the schematics of the capacitor: <br>
+<img src="./capacitor_schematics.png" style="width: 80%" alt="design png"> <br>
 
 <h4>Assignment 2: Photoresistor with an LED output</h4>
 
 I made a photoresistor with an LED that blinks green, but! When you shine your
-phone flashlight on the photoresistor, it blinks the color blue instead.
+phone flashlight on the photoresistor, also shows the color blue
 
 Here it is: <br>
 
-<img src="./photoresistor_circuit.JPG" style="width: 40%" alt="design png"> <br>
+<img src="./photoresistor_circuit.JPG" style="width: 80%" alt="design png"> <br>
+<video controls style="width: 200%; flex-shrink: 0; max-width: 400px;">
+  <source src="./photoresistor.mp4" type="video/mp4">
+  Your browser does not support the video tag. <a href="./photoresistor.mp4">Download the video</a> instead.
+</video>
 
+<br>
+
+Then, I measured the distance of my phone light to the photoresistor to get a measure
+for the relationship between the voltage on the reader and the distance from the light.
+<br>
+
+<img src="./photo_measure.png" style="width: 80%" alt="design png"> <br>
+<a href='./photoresistor.ino' download > Download my arduino code </a> <br>
+
+Next, I made a graph using the readings from my sensor to model the 
+relationship between the voltage readings I was getting and the distance away 
+from the flashlight. <br>
+
+Here is the graph: <br>
+<img src="./photoresistor_graph.png" style="width: 80%" alt="design png"> <br>
+
+We can see what the linear relationship is between these values by the line of 
+best fit in the graph. This makes sense because as resistance gets lower (so distance
+is higher), voltage gets higher since voltage is directly proprotional to resistance
+under constant current.
+
+Here are the schematics of the photoresistor: <br>
+
+TODO
 
 </div>
 </xmp>
